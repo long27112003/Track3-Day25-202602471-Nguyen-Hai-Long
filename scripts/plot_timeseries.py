@@ -26,6 +26,9 @@ def main() -> None:
     ap.add_argument("--dir", default="reports/gameday")
     args = ap.parse_args()
     try:
+        import matplotlib
+
+        matplotlib.use("Agg")  # render without a desktop display
         import matplotlib.pyplot as plt
     except ImportError:
         raise SystemExit('matplotlib missing: pip install -e ".[plot]"')

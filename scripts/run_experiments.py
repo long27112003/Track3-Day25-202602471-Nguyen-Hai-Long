@@ -1,14 +1,14 @@
+import copy
 import sys
 from pathlib import Path
-import copy
-import json
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+from gameday_lab.client import ResilientClient
+from gameday_lab.factory import build_client
 from gameday_lab.sim.config import load_config
 from gameday_lab.sim.engine import run_scenario
-from gameday_lab.factory import build_client
-from gameday_lab.client import ResilientClient
+
 
 def run_exp1():
     print("=== EXPERIMENT 1: RETRY BUDGET AS LAST LINE OF DEFENSE ===")
