@@ -1,6 +1,6 @@
 # Lab 25B — Report
 
-**Họ tên / nhóm:** Nguyễn Hải Long (202602471)  **Commit:** `2d9baac`  **Điểm tự động (`make grade`):** 84.0 / 88 (84/84 public test points)
+**Họ tên / nhóm:** Nguyễn Hải Long (202602471)  **Commit:** `2fb2ed5`  **Điểm tự động (`make grade`):** 84.0 / 88 (84/84 public test points)
 
 > Mọi nhận định phải có số. Dán số từ `reports/gameday/*.json`, `reports/workflows.json`, `reports/slo.json`.
 
