@@ -1,4 +1,4 @@
-.PHONY: install test baseline gameday compare workflows slo cache plot grade sli-data lint clean
+.PHONY: install test baseline gameday compare workflows slo cache plot grade sli-data lint clean dashboard
 
 PY ?= python
 
@@ -31,6 +31,9 @@ plot:                ## figure for the postmortem (needs matplotlib)
 
 grade:               ## automatic score (88 pts) -> reports/scoreboard.json
 	$(PY) scripts/grade.py
+
+dashboard:           ## launch interactive Streamlit GameDay dashboard
+	$(PY) -m streamlit run scripts/dashboard.py
 
 sli-data:
 	$(PY) scripts/make_sli_data.py
